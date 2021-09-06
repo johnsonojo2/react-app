@@ -29,6 +29,7 @@ jobs:
 
       - name: Build
         run: npm run build
+
         uses: jakejarvis/s3-sync-action@master
         env:
           AWS_S3_BUCKET: "reacttest-bucket"
